@@ -126,7 +126,7 @@
             background-image: url('pattern_bg.png'); /* Pattern wallpaper background */
             background-repeat: repeat;
             background-size: 380px auto; /* Elegant pattern scale */
-            padding: 24px 20px 0px 20px; 
+            padding: 24px 20px 30px 20px; /* Added 30px bottom padding to create a gap between the groom's head and the text on desktop */
             position: relative;
             z-index: 10;
         }
@@ -246,7 +246,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover; 
-            object-position: center bottom; /* Centered couple horizontally and vertically */
+            object-position: 62% bottom; /* Shifted left to reduce left side gap and balance layout */
             display: block; 
             position: relative;
             z-index: 1; /* Renders in front of glow background */
@@ -715,7 +715,7 @@
             }
             .hero-image-col img {
                 object-fit: cover; /* Zooms in on the center of PNG to make couple larger and remove gaps */
-                object-position: 58% top; /* Shifted slightly right to center both groom and bride on mobile */
+                object-position: 60% top; /* Shifted slightly left to balance side gaps on mobile */
             }
             .hero-form-col {
                 width: 100%;
